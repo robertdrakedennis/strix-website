@@ -28,7 +28,7 @@ const Home = () => (
       {/*<Nav />*/}
 
       <section className="neutral relative flex flex-col py-12 h-screen">
-        <div className='relative container p-6 m-auto neutral flex'>
+        <div className='relative container p-6 m-auto neutral flex flex-col md:flex-row'>
           <div className="order-2 md:order-1 pt-6 md:pt-0 md:mr-10 md:w-2/3">
             <h1 className="text-center md:text-left text-3xl md:text-5xl text-primary-500 font-bold mb-8">Welcome to Strix!</h1>
 

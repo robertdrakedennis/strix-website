@@ -8,7 +8,7 @@ export default class CustomDocument extends Document {
 
             <Head>
             </Head>
-            <body className="font-sans relative w-full h-full m-0 p-0 font-normal antialiased tracking-normal text-neutral-900 bg-neutral-900">
+            <body className="font-sans relative w-full h-full m-0 p-0 font-normal antialiased tracking-normal text-neutral-900 bg-transparent">
             <Main />
             <NextScript />
             </body>

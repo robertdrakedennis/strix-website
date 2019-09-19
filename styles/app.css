@@ -2,6 +2,18 @@
 @import "~tailwindcss/components.css";
 @import "~tailwindcss/utilities.css";
 
-body::before{
+body{
+    background-color: rgba(31,41,51, 0.8) !important;
+}
 
+body::before{
+    z-index: -99999;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: url("/static/bg.png") no-repeat center;
 }

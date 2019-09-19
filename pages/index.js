@@ -1,87 +1,44 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import '../styles/app.css'
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-    </Head>
+    <div className="font-sans relative w-full h-full m-0 p-0 font-normal antialiased tracking-normal text-neutral-900 bg-neutral-900">
+      <Head>
+        <title>Home</title>
+      </Head>
 
-    <Nav />
+      <Nav />
 
-    <div className='hero'>
-      <h1 className='title'>Welcome to Next.js!</h1>
-      <p className='description'>
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+      <section className="neutral relative flex flex-col py-12 pb-48">
+        <div className='relative container p-6 m-auto neutral'>
+          <div className="order-2 md:order-1 pt-6 md:pt-0 md:mr-10 md:w-2/3">
+            <h1 className="text-center md:text-left text-3xl md:text-5xl text-primary-500 font-bold mb-8">Welcome to Strix!</h1>
 
-      <div className='row'>
-        <a href='https://nextjs.org/docs' className='card'>
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href='https://nextjs.org/learn' className='card'>
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href='https://github.com/zeit/next.js/tree/master/examples'
-          className='card'
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
-      </div>
+            <p className="text-center md:text-left text-md md:text-xl text-neutral-200 leading-normal mb-10">
+              One of the only optimized RLCraft servers out there, little to no management and quality of life changes.
+            </p>
+
+            <div className="flex flex-col md:flex-row items-center">
+              <button href="#" className="inline-flex items-center text-primary-050 font-medium text-lg border-2 border-primary-500 px-3 py-1 rounded-full mr-0 md:mr-5">
+                IP: play.strix.gg
+              </button>
+
+              <a href="https://discord.gg" className="inline-flex items-center text-primary-050 font-medium text-lg px-3 py-1">
+                Discord
+              </a>
+            </div>
+
+            <div className="order-1 md:order-2 md:w-1/3 text-center md:mb-6 w-full h-full">
+              <img src="/static/strix_logo_solid.svg" alt=""/>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </div>
-
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-)
+);
 
 export default Home

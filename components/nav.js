@@ -10,46 +10,22 @@ const links = [
 })
 
 const Nav = () => (
-  <nav>
+  <nav className="container mx-auto p-4 mt-10 flex items-center justify-between mb-6">
     <ul>
-      <li>
+      <li className="mr-auto flex items-center">
         <Link href='/'>
           <a>Home</a>
         </Link>
       </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
     </ul>
 
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
+    <ul className="flex items-center">
+      {links.map(({ key, href, label }) => (
+          <li key={key}>
+            <a className="hidden md:inline-flex items-center text-primary-100 ml-5" href={href}>{label}</a>
+          </li>
+      ))}
+    </ul>
   </nav>
 )
 

@@ -21,7 +21,7 @@ const Home = () => (
             </p>
 
             <div className="flex flex-col md:flex-row items-center">
-              <button href="#" className="inline-flex items-center text-primary-050 font-medium text-lg border-2 border-primary-500 px-3 py-1 rounded-full mr-0 md:mr-5">
+              <button className="inline-flex items-center text-primary-050 font-medium text-lg border-2 border-primary-500 px-3 py-1 rounded-full mr-0 md:mr-5">
                 IP: play.strix.gg
               </button>
 

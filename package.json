@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/node": "^12.7.5",
     "@types/react": "^16.9.2",
+    "next-purgecss": "^3.1.1",
     "typescript": "^3.6.3"
   }
 }

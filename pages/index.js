@@ -4,15 +4,15 @@ import Nav from '../components/nav'
 import '../styles/app.css'
 
 const Home = () => (
-    <div className="font-sans relative w-full h-full m-0 p-0 font-normal antialiased tracking-normal text-neutral-900 bg-neutral-900">
+    <div className="border-t-4 border-primary-500">
       <Head>
         <title>Home</title>
       </Head>
 
       <Nav />
 
-      <section className="neutral relative flex flex-col py-12 pb-48">
-        <div className='relative container p-6 m-auto neutral'>
+      <section className="neutral relative flex flex-col py-12">
+        <div className='relative container p-6 m-auto neutral flex'>
           <div className="order-2 md:order-1 pt-6 md:pt-0 md:mr-10 md:w-2/3">
             <h1 className="text-center md:text-left text-3xl md:text-5xl text-primary-500 font-bold mb-8">Welcome to Strix!</h1>
 
@@ -29,11 +29,11 @@ const Home = () => (
                 Discord
               </a>
             </div>
+          </div>
 
             <div className="order-1 md:order-2 md:w-1/3 text-center md:mb-6 w-full h-full">
-              <img src="/static/strix_logo_solid.svg" alt=""/>
+                <img src="/static/strix_logo_solid.svg" alt=""/>
             </div>
-          </div>
 
         </div>
       </section>

@@ -3,7 +3,7 @@
 @import "~tailwindcss/utilities.css";
 
 body{
-    background-color: rgba(31,41,51, 0.8) !important;
+    background-color: rgba(31,41,51, 1) !important;
 }
 
 body::before{
@@ -15,5 +15,6 @@ body::before{
     width: 100%;
     height: 100%;
     background-size: cover;
+    opacity: 0.2;
     background: url("/static/bg.png") no-repeat center;
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 // import Nav from '../components/nav'
-import '../styles/app.css'
 
 const Home = () => (
     <div className="border-t-4 border-primary-500">

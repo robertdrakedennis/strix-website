@@ -1,6 +1,5 @@
 import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
-import '../styles/app.css'
 
 // ---------------------------------------------
 export default class CustomDocument extends Document {

@@ -41,7 +41,7 @@ const Home = () => (
                 IP: play.strix.gg
               </button>
 
-              <a href="https://discord.gg" className="inline-flex items-center text-primary-050 font-medium text-lg px-3 py-1">
+              <a href="https://strix.gg/discord" className="inline-flex items-center text-primary-050 font-medium text-lg px-3 py-1">
                 Discord
               </a>
             </div>
